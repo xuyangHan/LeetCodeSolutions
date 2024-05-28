@@ -478,6 +478,44 @@ namespace LeetCode.DataStructures
         //  For example "0001111", will be min(3, 4) = 3, ("01", "0011", "000111")
 
         #endregion
+
+        #region 1208. Get Equal Substrings Within Budget
+        // Input: s = "abcd", t = "bcdf", maxCost = 3
+        // Output: 3
+        // Explanation: "abc" of s can change to "bcd".
+        // That costs 3, so the maximum length is 3.
+
+        public int EqualSubstring(string s, string t, int maxCost)
+        {
+            int n = s.Length;
+            int[] cost = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                cost[i] = Math.Abs(s[i] - t[i]);
+            }
+
+            int maxLength = 0;
+            int start = 0;
+            int end = 0;
+            int sum = 0;
+            while (end < n)
+            {
+                sum += cost[end];
+                while (sum > maxCost)
+                {
+                    sum -= cost[start];
+                    start++;
+                }
+
+                maxLength = Math.Max(maxLength, end - start + 1);
+                end++;
+            }
+
+            return maxLength;
+        }
+
+
+        #endregion
     }
 }
 
