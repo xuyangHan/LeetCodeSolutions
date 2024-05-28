@@ -1,0 +1,15 @@
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/bin/Debug/net7.0/LeetCodeSolutions
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/bin/Debug/net7.0/LeetCodeSolutions.deps.json
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/bin/Debug/net7.0/LeetCodeSolutions.runtimeconfig.json
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/bin/Debug/net7.0/LeetCodeSolutions.dll
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/bin/Debug/net7.0/LeetCodeSolutions.pdb
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.csproj.AssemblyReference.cache
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.AssemblyInfoInputs.cache
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.AssemblyInfo.cs
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.csproj.CoreCompileInputs.cache
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.dll
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/refint/LeetCodeSolutions.dll
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.pdb
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/LeetCodeSolutions.genruntimeconfig.cache
+/Users/xuyanghan/Documents/Repos/LeetCode/LeetCodeSolutions/obj/Debug/net7.0/ref/LeetCodeSolutions.dll
