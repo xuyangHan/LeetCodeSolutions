@@ -626,6 +626,92 @@ namespace LeetCode.DataStructures
             return nums.Length;
         }
         #endregion
+
+        #region 131. Palindrome Partitioning
+        // Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s.
+        public IList<IList<string>> Partition(string s)
+        {
+            List<IList<string>> ans = new List<IList<string>>();
+            List<string> path = new List<string>();
+            Backtrack(s, 0, path, ans);
+            return ans;
+        }
+
+        private void Backtrack(string s, int start, List<string> path, List<IList<string>> ans)
+        {
+            if (start == s.Length)
+            {
+                ans.Add(new List<string>(path));
+                return;
+            }
+
+            for (int i = start; i < s.Length; i++)
+            {
+                if (IsPalindrome(s, start, i))
+                {
+                    path.Add(s.Substring(start, i - start + 1));
+                    Backtrack(s, i + 1, path, ans);
+                    path.RemoveAt(path.Count - 1);
+                }
+            }
+        }
+
+        private bool IsPalindrome(string s, int start, int end)
+        {
+            while (start < end)
+            {
+                if (s[start] != s[end])
+                {
+                    return false;
+                }
+                start++;
+                end--;
+            }
+            return true;
+        }
+
+        public int SubsetXORSum(int[] nums)
+        {
+            int n = nums.Length;
+            int ans = 0;
+            for (int i = 0; i < (1 << n); i++)
+            {
+                int xor = 0;
+                for (int j = 0; j < n; j++)
+                {
+                    if ((i & (1 << j)) != 0)
+                    {
+                        xor ^= nums[j];
+                    }
+                }
+                ans += xor;
+            }
+            return ans;
+        }
+
+        public int CountTriplets(int[] arr)
+        {
+
+            int n = arr.Length;
+            int[] prefix = new int[n + 1];
+            for (int i = 0; i < n; i++)
+            {
+                prefix[i + 1] = prefix[i] ^ arr[i];
+            }
+            int ans = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int k = i + 1; k < n; k++)
+                {
+                    if (prefix[i] == prefix[k + 1])
+                    {
+                        ans += k - i;
+                    }
+                }
+            }
+            return ans;
+        }
+        #endregion
     }
 }
 
